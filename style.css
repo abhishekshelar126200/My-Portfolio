@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scrollbar-width: none;
+}
+
+body{
+    background-color: rgb(31, 36, 45);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    /* border:1px solid red; */
+    height:100vh;
+    width:100vw;
+    box-sizing: border-box;
+    
+    
+}
+
+
+/*                                               navbar                                             */
+
+
+
+.navbar{
+    /* border:1px solid black; */
+    box-sizing: border-box;
+    height:15%;
+    width:98%;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    /* border-bottom: 4px solid rgb(17, 184, 184); */
+    border-radius: 2px;
+    position:relative;
+
+    z-index: 1000;
+
+    
+    
+    /* background-color: rgb(235, 235, 235); */
+    
+}
+
+.navbar ul{
+    /* border:1px solid black; */
+    width:98%;
+    margin:auto;
+    /* margin-left: 1px; */
+    /* height:100%; */
+    display:flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 36, 45);
+
+    
+
+}
+
+
+.navbar ul li{
+    list-style: none;
+    margin:20px 20px;
+    /* width:100px; */
+    /* border:1px solid black; */
+
+}
+
+.navbar ul .close{
+   display:none;
+    
+}
+
+.navbar ul .close img{
+    height:15px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    font-size: 2.5vh;
+    text-shadow: 0px 0px 60px rgb(17, 184, 184);
+}
+
+#right_a{
+    position:absolute;
+    left:30px;
+    animation:menu_a 1s infinite alternate;
+    visibility: hidden;
+}
+
+#right{
+    color:white;
+    position:absolute;
+    left:60px;
+    animation:menu 1s infinite alternate;
+    visibility: hidden;
+}
+
+@keyframes menu_a {
+    0%{
+        left:20px
+    }
+
+    100%{
+        left:30px
+    }
+}
+
+@keyframes menu {
+    0%{
+        left:50px
+    }
+
+    100%{
+        left:60px
+    }
+}
+
+.navbar ul .download{
+    width:40%;
+    height:70%;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    /* border:1px solid white; */
+   
+}
+
+.navbar img{
+    display: none;
+}
+
+.navbar ul .download a{
+    text-decoration: none;
+    /* border:1px solid black; */
+    padding:10px;
+    border-radius: 7px;
+    background-color:rgb(17, 184, 184);
+    color:white;
+}
+
+#ham{
+    color:white;
+    filter: invert();
+    position:absolute;
+    transition:all 0.8s;
+       
+}
+
+
+
+
+/*                                               navbar                                             */
+
+
+
+
+
+/*                                               container                                          */
+
+
+
+.container1{
+    width:98%;
+    height:80vh;
+    margin: 10px auto;
+    /* border:1px solid black; */
+    display:flex;
+    background-color: rgb(31, 36, 45);
+   
+}
+
+
+
+
+.container1 .image{
+    /* border:1px solid black; */
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px rgb(26, 27, 28);
+}
+
+.container1 .image img{
+    height:70%;
+    width:70%;
+    border-radius: 50%;
+    /* position:absolute; */
+    animation: moveImage 1s infinite alternate;
+    box-shadow: 0px 0px 20px 0px rgb(17, 184, 184); 
+    
+}
+@keyframes moveImage {
+    0% {
+        transform: translateX(-5%);
+        
+    }
+    70% {
+
+        transform: translateX(0%);
+    }
+}
+
+.container1 .info{
+    /* border:1px solid red; */
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding:0 0 0 3vw;
+    box-shadow: 0px 0px 5px 0px rgb(25, 28, 33);
+
+}
+.container1 .info div{
+    /* border:1px solid white; */
+    color: white;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+.container1 .info div h1{
+    font-size: 7vh;
+    text-shadow: 0px 0px 20px rgb(17, 184, 184);
+
+}
+.container1 .info div h3{
+    font-size: 4vh;
+    width:40vw;
+    text-shadow: 0px 0px 60px rgb(17, 184, 184); ;
+    /* border:1px solid white; */
+   
+    
+}
+
+.container1 .info div h3 span{
+    color:rgb(17, 184, 184)
+}
+
+
+.container1 .info div div{
+    overflow: hidden;
+    animation:appear 4s 0s infinite;
+    /* border: 1px solid red; */
+
+}
+
+
+@keyframes appear{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%;
+    }
+
+   
+}
+
+.container1 .info div p{
+    font-size: 3vh;
+    font-weight: 600;
+    text-shadow: 0px 0px 60px rgb(17, 184, 184);
+
+}
+
+
+.container1 .info div span{
+    color:rgb(17, 184, 184);
+}
+
+
+
+
+
+/*                                               container                                          */
+
+
+
+
+
+
+/*                                              main                                                */
+
+
+main{
+    min-height:100vh;
+    width:100vw;
+    /* border:5px solid red; */
+    box-sizing: border-box;
+   
+    
+}
+
+
+main .projects{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:10px;
+    /* border:1px solid blue; */
+}
+
+#projects{
+    padding:10px 0;
+    text-align: center;
+    color:white;
+    /* border:1px solid blue; */
+    margin:70px 0 0 0;
+}
+
+#projects span{
+    color:rgb(17, 184, 184);
+}
+
+main .projects .card{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:300px;
+    width:350px;
+    justify-content: space-around;
+    padding:0 15px;
+    border-radius: 10px;
+    /* background-color: aliceblue; */
+    background-color: rgb(50, 57, 70);
+    color:white;
+    cursor:pointer;
+    text-decoration: none;
+    
+}
+
+main .projects .card:hover{
+    height:302px;
+    width:352px;
+    box-shadow: 0px 0px 5px 0px rgb(17, 184, 184); 
+    transition:all 0.3s;
+}
+
+.projects .card img{
+    height:90px;
+    width:120px;
+    border-radius: 50%;
+}
+
+.projects .card .spotify{
+    text-decoration: none;
+    border: 1px solid red;
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+    /* background-color: rgb(255, 63, 63); */
+    background-color: rgb(17, 184, 184);
+}
+
+.projects .card p{
+    /* text-shadow: 0px 0px 50px rgb(17, 184, 184); */
+    /* border:1px solid red; */
+    line-height: 3vh;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.projects .card span{
+    visibility:hidden;
+    text-shadow: 0px 0px 60px rgb(17, 184, 184); ;
+    /* border: 1px solid rgb(17, 184, 184); */
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px 0px rgb(17, 184, 184);  */
+    padding:3px;
+
+}
+
+
+main .internship{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:10px;
+    /* border:1px solid red; */
+
+}
+
+#internship_h{
+    text-align: center;
+    padding:10px 0;
+    color:white;
+}
+
+main .internship .card{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:350px;
+    width:400px;
+    justify-content: space-around;
+    padding:0 15px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    
+}
+
+.internship .card img{
+    height:100px;
+    width:150px;
+}
+
+.internship .card a{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+    /* background-color: rgb(255, 63, 63); */
+}
+
+
+
+
+
+
+/*                                main                                    */
+
+
+
+
+
+/*                              footer                                     */
+
+
+.container{
+    /* border: 1px solid black; */
+    margin:10px auto auto auto;
+    text-align: center;
+    height:110vh;
+    padding:50px 0 0 0;
+    background-color: rgb(31, 36, 45);
+    color:white;
+   
+}
+
+.container span{
+    color:  rgb(17, 184, 184);
+
+}
+
+form{
+    /* border:1px solid black; */
+    width:60%;
+    margin:auto;
+    height:60vh;
+}
+
+form >div{
+    display: flex;
+    gap:15px;
+    flex-direction: column;
+    margin:10px;
+    width:100%;
+    /* border: 1px solid white; */
+    align-items: center;
+}
+
+form div div{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid white; */
+    gap:30px;
+    flex-wrap: wrap;
+   
+}
+
+
+form div div input{
+    height:5vh;
+    width:20vw;
+    border-radius: 10px;
+    padding:10px;
+    border: none;
+    outline: none;
+    background-color: rgb(50, 57, 70);
+
+
+}
+
+form textarea{
+    width: 43vw;
+    border-radius: 10px;
+    padding:15px;
+    height:25vh;
+    /* margin:10px; */
+    border:none;
+    background-color: rgb(50, 57, 70);
+
+    outline: none;
+}
+
+form .button{
+
+    width:100%;
+}
+
+form .button button{
+    padding:15px;
+    margin: auto;
+    background-color: rgb(17, 184, 184);
+    color:white;
+    border:none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+@media (max-width:1000px){
+
+    #right{
+        visibility: visible;
+    }
+
+    #right_a{
+        visibility: visible;
+    }
+
+    main .projects .card{
+        width:80vw;
+    }
+    
+    main .projects .card:hover{
+        width:81vw;
+        box-shadow: 0px 0px 5px 0px rgb(17, 184, 184); 
+        transition:all 0.3s;
+    }
+
+    header .navbar ul{
+        position:absolute;
+        top:0;
+        left:-1200px;
+
+        flex-direction: column;
+        width: 40%;
+        /* height:20%; */
+        /* margin:10px 5px; */
+        align-items:start;
+        transition:all 0.8s;
+
+    }
+
+    header .navbar ul li{
+        margin:5px 5px;
+    }
+
+    header .navbar ul .download{
+        width:100%;
+        justify-content: start;
+    }
+
+    .navbar{
+        justify-content: left;  
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .navbar img{
+        display:inline;
+        height:20px;
+      
+    }
+
+    form div div input{
+        width:50vw;
+    }
+
+    form div div{
+        gap:15px;
+    }
+
+    .container{
+        padding:50px 0 0 0;
+        height:150vh;
+       
+        
+    }
+
+    form textarea{
+        width:46vw;
+    }
+
+    .navbar ul .close{
+        display:inline;
+        position: absolute;
+        top:2px;
+        right: 2px;
+        transition:all 0.8s;
+    }
+
+    .container1{
+        flex-direction: column;
+        align-items: center;
+        height:100vh;
+        /* border: 1px solid red; */
+    }
+
+    .container1 .image{
+        /* border:1px solid black; */
+        width:90%;
+
+    }
+
+    .container1 .info{
+        /* border: 1px solid blue; */
+        width:80%;
+        justify-content: center;
+        
+    }
+    .container1 .info h1{
+        text-align: center;
+    }
+
+    .container1 .info div{
+        width:100vw
+        
+    }
+
+    .container1 .info div div{
+        width:100vw;
+    } 
+
+
+    .container1 .info div h3{
+        text-align: start;
+        width:120vw;
+        padding:0 0px 0 5vw;
+        /* border: 1px solid red; */
+    }
+
+    @keyframes appear{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:100%;
+        }
+    
+       
+    }
+
+    .container1 .info div p{
+        /* border: 1px solid red; */
+        /* text-align: center; */
+        width:90%;
+        margin: auto;
+    }
+
+    #projects{
+        margin:150px 0 0 0;
+    }
+
+    
+
+}
+
+
+@media (max-width:600px)
+{
+        .container1 .image img{
+            height:60%;
+            width:60%;
+        
+            
+        }
+
+        .container1{
+            flex-direction: column;
+            align-items: center;
+            height:100vh;
+            z-index: 1000;
+            /* border: 1px solid red; */
+        }
+
+        .container1 .info{
+            /* border: 1px solid red; */
+            width:87%;
+            /* justify-content: center; */
+            align-items: center;
+            text-align: start;
+        }
+        .container1 .info h1{
+            /* text-align: center; */
+        }
+    
+
+        .container1 .info div h3{
+            text-align: start;
+            width:120vw;
+            padding:0 0px 0 7vw;
+            /* border: 1px solid red; */
+        }
+
+        .container1 .info div p{
+            /* border: 1px solid red; */
+            /* text-align: center; */
+            margin:auto;
+            width:85vw;
+        }
+
+        #projects{
+            padding:50px 0 0 0 ;
+        }
+
+
+
+        .image{
+            /* border: 1px solid red; */
+
+        }
+}
